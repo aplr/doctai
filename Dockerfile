@@ -7,6 +7,6 @@ RUN apk add --update --no-cache --virtual .build-deps curl && \
     ln -s /usr/bin/kaitai-struct-compiler /usr/bin/ksc && \
     apk del .build-deps
 
-RUN apk add bash
+RUN apk add --update --no-cache bash make
 
 ENTRYPOINT [ "/usr/bin/ksc" ]
