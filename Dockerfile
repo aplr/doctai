@@ -9,4 +9,4 @@ RUN apk add --update --no-cache --virtual .build-deps curl && \
 
 RUN apk add --update --no-cache bash make
 
-ENTRYPOINT [ "/usr/bin/ksc" ]
+CMD [ "/usr/bin/ksc" ]
